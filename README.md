@@ -1,4 +1,4 @@
-# The YaST Ruby Testing Image
+# The libstorage-ng Testing Image
 
 [![Build Status](https://travis-ci.org/yast/docker-libstorage-ng.svg?branch=master)](https://travis-ci.org/yast/docker-libstorage-ng)
 
