@@ -1,0 +1,12 @@
+sudo: required
+language: bash
+services:
+  - docker
+
+script:
+  # build the Docker image
+  - docker build -t libstorage-ng-devel-image -f Dockerfile.$DOCKER_TAG .
+
+env:
+  # define the build matrix to build all images in parallel
+  - DOCKER_TAG=latest
