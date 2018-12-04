@@ -11,6 +11,8 @@ RUN zypper --non-interactive dup --no-recommends && zypper --non-interactive in 
   autoconf \
   automake \
   boost-devel \
+  brp-check-suse \
+  brp-extract-appdata \
   build \
   ccache \
   doxygen \
