@@ -10,3 +10,5 @@ script:
 env:
   # define the build matrix to build all images in parallel
   - DOCKER_TAG=latest
+  - DOCKER_TAG=sle15
+  - DOCKER_TAG=sle15-sp1
