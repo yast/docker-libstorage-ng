@@ -19,6 +19,7 @@ RUN zypper --non-interactive dup --no-recommends && zypper --non-interactive in 
   gcc-c++ \
   git \
   graphviz \
+  libboost_headers-devel \
   libboost_test-devel \
   libjson-c-devel \
   libtool \
