@@ -1,0 +1,26 @@
+
+# See https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
+
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        flavour: 
+          # Disabled, unfortunately zypper segfaults in this build :-(
+          # - sle15
+          - sle15-sp1
+
+    steps:
+
+    - name: Git Checkout
+      uses: actions/checkout@v2
+
+    - name: Build the Docker Image
+      run: docker build -t libstorage-ng-test -f Dockerfile.${{ matrix.flavour }} .
+
